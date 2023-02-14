@@ -1,6 +1,9 @@
 var fs = require("fs");
 
 var fileName = "src/langData.json";
+var enFileName = "src/locale/en.json";
+var hiFileName = "src/locale/hi.json";
+var idFileName = "src/locale/id.json";
 
 async function fetchLangData() {
   try {
@@ -9,6 +12,18 @@ async function fetchLangData() {
     );
     const res = await response.json();
     fs.writeFileSync(fileName, JSON.stringify(res.data, null, "\t"), "utf8");
+    const result = [];
+
+    for (const lang of ["en", "hi", "id"]) {
+      const obj = {};
+      for (const item of res.data) {
+        obj[item.key] = item[lang];
+      }
+      result.push(obj);
+    }
+    fs.writeFileSync(enFileName, JSON.stringify(result[0], null, "\t"), "utf8");
+    fs.writeFileSync(hiFileName, JSON.stringify(result[1], null, "\t"), "utf8");
+    fs.writeFileSync(idFileName, JSON.stringify(result[2], null, "\t"), "utf8");
   } catch (error) {
     console.error(error);
   }

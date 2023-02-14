@@ -1,14 +1,20 @@
 [
-  {
-    "key": "siteMetaData.siteName",
-    "en": "Achieve peak cashflows 📈",
-    "id": "Capai peak cash flow  📈",
-    "hi": "पीक कैशफ्लो प्राप्त करें 📈"
-  },
-  {
-    "key": "test.key",
-    "en": "hello peakflo",
-    "id": "halo peakflo",
-    "hi": "हैलो पीकफ्लो"
-  }
+	{
+		"key": "siteMetaData.siteName",
+		"en": "Achieve peak cashflows 📈",
+		"id": "Capai peak cash flow  📈",
+		"hi": "पीक कैशफ्लो प्राप्त करें 📈"
+	},
+	{
+		"key": "test.key",
+		"en": "hello peakflo",
+		"id": "halo peakflo",
+		"hi": "हैलो पीकफ्लो"
+	},
+	{
+		"key": "intro",
+		"en": "My name is Aaveg",
+		"id": "Nama saya Aaveg",
+		"hi": "मेरा नाम आवेग है"
+	}
 ]

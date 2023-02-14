@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./App.css";
-import { useTranslation } from "react-i18next";
-import { LangSwitcher } from "./LangSwitcher";
+import { FormattedMessage } from "react-intl";
+import { Context } from "./components/wrapper";
 
 function App() {
-  const { t } = useTranslation();
-
+  const context = useContext(Context);
   return (
     <div className="App">
       <header className="App-header">
-        <LangSwitcher />
-        <p>{t("siteMetaData.siteName")}</p>
+        <select value={context.locale} onChange={context.selectLanguage}>
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="id">Indonesian</option>
+        </select>
+        <p>
+          <FormattedMessage
+            id="siteMetaData.siteName"
+            defaultMessage="Achieve peak cashflows 📈"
+          />
+          ;
+        </p>
       </header>
     </div>
   );
