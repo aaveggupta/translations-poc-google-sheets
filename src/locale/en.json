@@ -1,5 +1,6 @@
 {
-	"siteMetaData.siteName": "Achieve peak cashflows 📈",
-	"test.key": "hello peakflo",
-	"intro": "My name is Aaveg Gupta"
+  "siteMetaData.siteName": "Achieve peak cashflows 📈",
+  "test.key": "hello peakflo",
+  "intro": "My name is Aaveg Gupta",
+  "testVercel": "its a test of vercel build"
 }

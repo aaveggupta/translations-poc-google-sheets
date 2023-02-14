@@ -20,6 +20,13 @@ function App() {
           />
           ;
         </p>
+        <p>
+          <FormattedMessage
+            id="testVercel"
+            defaultMessage="its a test of vercel build"
+          />
+          ;
+        </p>
       </header>
     </div>
   );
