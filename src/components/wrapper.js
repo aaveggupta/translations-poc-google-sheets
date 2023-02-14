@@ -6,7 +6,7 @@ import Indonesian from "../locale/id.json";
 
 export const Context = React.createContext();
 
-const local = navigator.language;
+const local = "en";
 
 let lang;
 if (local === "en") {

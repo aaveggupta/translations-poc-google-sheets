@@ -18,14 +18,12 @@ function App() {
             id="siteMetaData.siteName"
             defaultMessage="Achieve peak cashflows 📈"
           />
-          ;
         </p>
         <p>
           <FormattedMessage
             id="testVercel"
             defaultMessage="its a test of vercel build"
           />
-          ;
         </p>
       </header>
     </div>
